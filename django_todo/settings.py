@@ -1,11 +1,10 @@
 from pathlib import Path
 import os
 import dj_database_url
-import env
 
-if os.path.isfile("env.py"):
-    import env
-    
+
+
+
 """
 Django settings for django_todo project.
 
@@ -90,7 +89,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.parse('postgres://myyxkxkx:BSJgyz-Jp4v82bQHWGIMf59heKyXaTdn@trumpet.db.elephantsql.com/myyxkxkx')
     }
 
 
